@@ -3,6 +3,10 @@
 \usepackage[english]{babel}
 \usepackage{blindtext}
 
+% destlabel: destination names based on labels for http[s]://<url/<path>.pdf#<destination> or `evince <path>.pdf --named-dest <destination>'
+% see https://mirror.apps.cam.ac.uk/pub/tex-archive/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf#subsection.5.2
+\PassOptionsToPackage{destlabel}{hyperref}
+
 % Copyright
 \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference info
 \setcopyright{none}
