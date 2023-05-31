@@ -1,0 +1,64 @@
+\documentclass[sigconf]{acmart}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+% Copyright
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference info
+\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+\settopmatter{printacmref=false, printccs=false, printfolios=true}
+
+% DOI
+\acmDOI{}
+
+% ISBN
+\acmISBN{}
+
+%Conference
+\acmConference[Submitted for review to a Conference]{}
+\acmYear{XXXX}
+\copyrightyear{}
+
+%% {} with no args suppresses printing of the price
+\acmPrice{}
+
+
+\begin{document}
+\title{A \LaTeX\ Template}
+
+%\titlenote{Produces the permission block, and copyright information}
+%\subtitle{Extended Abstract}
+
+\author{Ryan Gibb}
+% \authornote{Note}
+\orcid{0009-0009-5702-3143}
+\affiliation{%
+    \institution{University of Cambridge}
+    \city{}
+    \country{}
+}
+\email{ryan.gibb@cl.cam.ac.uk}
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{R. Gibb .et al.}
+
+\begin{abstract}
+    \blindtext
+\end{abstract}
+
+\maketitle
+
+\input{body}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{reference}
+
+\end{document}
